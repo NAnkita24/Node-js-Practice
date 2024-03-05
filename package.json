@@ -1,0 +1,25 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "node js file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NAnkita24/Node-js-Practice.git"
+  },
+  "keywords": [
+    "code",
+    "step",
+    "by",
+    "step"
+  ],
+  "author": "ankita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NAnkita24/Node-js-Practice/issues"
+  },
+  "homepage": "https://github.com/NAnkita24/Node-js-Practice#readme"
+}
