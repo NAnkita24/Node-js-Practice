@@ -1,7 +1,0 @@
-const http=require("http")
-function data(req,resp){
-resp.write("HII Ankita")
-resp.end("Thanks")
-
-}
-http.createServer(data).listen(4500)
