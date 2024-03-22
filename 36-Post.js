@@ -4,7 +4,10 @@ const app=express()
 
 app.use(express.json());
 
-app.post('/',(req,resp)=>{
-    console.log(req.body);
-    resp.send({name:"Nokia 10"})
+app.post('/',async(req,resp)=>{
+    let data= await dbConnect();
+    let result=await data.insert(req.body)
+    req.send(result);
 })
+
+app.listen(5000)
