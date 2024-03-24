@@ -7,7 +7,7 @@ app.use(express.json());
 app.post('/',async(req,resp)=>{
     let data= await dbConnect();
     let result=await data.insert(req.body)
-    req.send(result);
+    resp.send(result);
 })
 
 app.listen(5000)
