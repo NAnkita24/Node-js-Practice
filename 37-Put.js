@@ -5,10 +5,12 @@ const app=express()
 app.use(express.json());
 
 app.put('/',async(req,resp)=>{
-     let data= await dbConnect();
+    let data= await dbConnect();
      
-     let result= data.updateOne({name:"Redmi prime"},{$set:{prize:400}})
+    let result= await data.updateOne({name:"max pro 5"},{$set:{prize:100}})
     resp.send({result:"update"});
+
+    console.log(result);
 })
 
 app.listen(5000) 
