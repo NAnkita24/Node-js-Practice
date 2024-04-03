@@ -8,11 +8,21 @@ const ecomSchema= new mongoose.Schema({
 })
 
 const main=async()=>{
+<<<<<<< HEAD
+=======
+    
+    await mongoose.connect("mongodb://127.0.0.1:27017/e-com")
+   const ecomSchema= new mongoose.Schema({
+        name:String
+       
+    })
+>>>>>>> 0a918e4b9998e8dac585dadaae2e3d8b4aaa14c4
 
     const ecomModel=mongoose.model('videos',ecomSchema)
     let data=new ecomModel({name:"max 6",brand:"m6",prize:180})
     let result= await data.save()
     console.log(result);
+    
 }
 //main()
 
